@@ -35,7 +35,10 @@ const server = http.createServer((req, res) => {
         return;
       }
       res.setHeader('Content-Type', 'application/json');
-      res.end(JSON.stringify(results));
+      res.writeHead(302, {
+        'Location': 'https://atestados.vercel.app/Paginas/PaginaLista.html'
+      });
+      res.end();
     }
   );
 });
