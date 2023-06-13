@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "testedelver.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/excluir",
+        "methods": ["DELETE"],
+        "dest": "testedelver.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "testedelver.js"
+      }
+    ]
+  }
