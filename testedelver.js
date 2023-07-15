@@ -5,11 +5,11 @@ const port = process.env.PORT || 3000; // obter a porta do Vercel ou usar a port
 
 // criar uma conexão com o banco de dados
 const connection = mysql.createConnection({
-  host: 'containers-us-west-190.railway.app',
+  host: 'containers-us-west-57.railway.app',
   user: 'root',
-  password: 'uF1YkyevPV5usJbw8iYn',
+  password: '4FBWQChE2RZHEClQNdjS',
   database: 'railway',
-  port: '6178'
+  port: '8053'
 });
 
 // criar o servidor HTTP
